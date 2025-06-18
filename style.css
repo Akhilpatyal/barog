@@ -55,6 +55,17 @@ body {
   background-color: #77c84b;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
+.btn-theme-2 {
+  background-color: #77c84b;
+  color: white;
+  border: none;
+  padding: 13px 15px;
+  font-size: 16px;
+}
+.btn-theme-2:hover {
+  background-color: #77c84b;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
 .section-2 h2 {
   font-size: 1.8rem;
 }
@@ -87,11 +98,19 @@ body {
 .f-larger{
         font-size: x-large!important;
 }
-
+.fw-500{
+  font-weight: 500!important;
+}
 @media (max-width: 768px) {
   .text {
     text-align: center;
     padding: 0px 20px;
     font-size: 25px !important;
   }
+  .para {
+  font-size: 22px;
+}
+.section-4 ul {
+  font-size: 22px;
+}
 }
