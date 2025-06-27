@@ -263,6 +263,9 @@ body {
   list-style-type: none;
   font-size: 25px;
 }
+.contact {
+ padding-left: 14px!important;
+}
 .contact span{
   font-weight: bolder;
 }
