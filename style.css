@@ -34,9 +34,8 @@ body {
   border-top: 1px solid #ddd;
 }
 
-
-.section-1{
-padding: 100px 0px!important;
+.section-1 {
+  padding: 100px 0px !important;
 }
 .icon-box {
   font-size: 2rem;
@@ -67,8 +66,8 @@ padding: 100px 0px!important;
   background-color: #77c84b;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
-.section-2{
-  padding: 100px 0px!important;
+.section-2 {
+  padding: 100px 0px !important;
 }
 .section-2 h2 {
   font-size: 1.8rem;
@@ -111,7 +110,7 @@ padding: 100px 0px!important;
   margin-bottom: 20px !important;
 }
 .section-5 {
-  margin: 100px 0px!important;
+  margin: 100px 0px !important;
 }
 .section-6 {
   margin-top: 80px !important;
@@ -140,7 +139,7 @@ padding: 100px 0px!important;
     padding-top: 30px;
   }
   .section-4 {
-    margin-top: 100px !important; 
+    margin-top: 100px !important;
     margin-bottom: 80px !important;
   }
   .section-5 {
@@ -157,9 +156,10 @@ padding: 100px 0px!important;
     margin-left: 2px;
   }
   .text {
-    font-size: 22px !important;
+    font-size: 20px !important;
     padding: 20px 20px;
     text-align: center;
+    font-weight: 600;
   }
   .para {
     font-size: 18px;
@@ -197,6 +197,9 @@ padding: 100px 0px!important;
     flex-direction: column;
     font-size: 1rem;
   }
+  .contact {
+  font-size: 22x;
+}
 }
 
 @media (min-width: 480px) and (max-width: 768px) {
@@ -253,4 +256,13 @@ padding: 100px 0px!important;
     background-size: cover;
     image-rendering: pixelated;
   }
+}
+
+.contact {
+  text-align: start;
+  list-style-type: none;
+  font-size: 25px;
+}
+.contact span{
+  font-weight: bolder;
 }

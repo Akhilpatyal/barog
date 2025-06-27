@@ -1,183 +1,317 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Woods – Barog</title>
+    <link rel="icon" type="image/x-icon" href="assets/thewood-sm.png" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>The Woods – Barog</title>
-  <link rel="icon" type="image/x-icon" href="assets/thewood-sm.png">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
-  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- SweetAlert CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  </head>
 
-  <!-- SweetAlert CDN -->
-  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-</head>
+  <body>
+    <section class="hero-section position-relative text-white">
+      <!-- Top bar: logo & button -->
+      <div
+        class="container-fluid d-flex justify-content-between align-items-center py-3 px-4"
+      >
+        <img
+          src="assets/thewood-sm.png"
+          alt="The Woods Barog Logo"
+          style="height: 50px"
+        />
+        <button
+          class="btn btn-theme-2 mt-1 font-weight-bold"
+          data-toggle="modal"
+          data-target="#virtualTourModal"
+        >
+          Take a virtual tour
+        </button>
+      </div>
 
-<body>
+      <!-- Main banner content -->
+      <div class="container text-center banner-center-content">
+        <h1
+          class="font-weight-bold mb-3"
+          data-aos="fade-up"
+          data-aos-duration="1500"
+          style="font-size: 40px"
+        >
+          Own a home in Himachal that reflects your success
+        </h1>
+        <p class="lead mb-4" data-aos="fade-up" data-aos-duration="2000">
+          The Woods Barog – Your Peaceful Hill Home with Like-Minded Neighbours
+        </p>
+        <button
+          class="btn btn-theme mt-3 mb-5 font-weight-bold"
+          data-toggle="modal"
+          data-target="#virtualTourModal"
+        >
+          Take a virtual tour
+        </button>
+      </div>
 
-  <section class="hero-section position-relative text-white">
-    <!-- Top bar: logo & button -->
-    <div class="container-fluid d-flex justify-content-between align-items-center py-3 px-4">
-      <img src="assets/thewood-sm.png" alt="The Woods Barog Logo" style="height: 50px;">
-      <button class="btn btn-theme-2 mt-1 font-weight-bold" data-toggle="modal" data-target="#virtualTourModal">
-        Take a virtual tour
-      </button>
+      <!-- Bottom Strip -->
+      <div
+        class="banner-bottom-strip d-flex justify-content-around text-dark font-weight-bold text-center"
+      >
+        <div class="flex-fill py-2">Prime Location</div>
+        <div class="flex-fill py-2">No Short-Term Rental</div>
+        <div class="flex-fill py-2">Anyone Can Own</div>
+      </div>
+    </section>
+
+    <div class="section-1">
+      <div
+        class="container d-flex justify-content-center align-items-center flex-column"
+      >
+        <h1 class="text" data-aos="fade-up" data-aos-duration="1000">
+          Studies show that communities with short-term guests often feel less
+          safe and secure
+        </h1>
+        <p class="para">
+          At The Woods – Barog, you’ll never worry about who’s next door
+        </p>
+        <img
+          src="assets/vector-1.png"
+          alt=""
+          data-aos="zoom-in"
+          data-aos-duration="1000"
+        />
+        <button
+          class="btn btn-theme mt-3"
+          data-toggle="modal"
+          data-target="#virtualTourModal"
+        >
+          Take a Virtual Tour
+        </button>
+      </div>
     </div>
 
-    <!-- Main banner content -->
-    <div class="container text-center banner-center-content">
-      <h1 class="font-weight-bold mb-3" data-aos="fade-up" data-aos-duration="1500" style="font-size: 40px;">Own a home
-        in Himachal that reflects your success</h1>
-      <p class="lead mb-4" data-aos="fade-up" data-aos-duration="2000">The Woods Barog – Your Peaceful Hill Home with
-        Like-Minded Neighbours</p>
-      <button class="btn btn-theme mt-3 mb-5 font-weight-bold" data-toggle="modal" data-target="#virtualTourModal">
-        Take a virtual tour
-      </button>
-    </div>
+    <!-- self use only -->
+    <div class="section-2 text-center">
+      <div class="container">
+        <h2 class="text" data-aos="fade-up" data-aos-duration="1000">
+          No Short-Term Rental = More Value for You
+        </h2>
 
-    <!-- Bottom Strip -->
-    <div class="banner-bottom-strip d-flex justify-content-around text-dark font-weight-bold text-center">
-      <div class="flex-fill py-2">Prime Location</div>
-      <div class="flex-fill py-2">No Short-Term Rental</div>
-      <div class="flex-fill py-2">Anyone Can Own</div>
-    </div>
-  </section>
+        <div class="row justify-content-center py-3">
+          <!-- Left (lower) -->
+          <div class="col-md-4 d-flex flex-column justify-content-end mb-4">
+            <div class="mt-auto pt-5 center">
+              <!-- push down -->
+              <img
+                src="assets/location.png"
+                alt="Secure Community"
+                width="30"
+              />
+              <h5 class="font-weight-bold mt-3">🔒 Secure Community</h5>
+              <p>No temporary guests</p>
+            </div>
+          </div>
 
+          <!-- Center (top) -->
+          <div class="col-md-4 mb-4 center">
+            <img src="assets/location.png" alt="Secure Community" width="30" />
+            <h5 class="font-weight-bold mt-3">👨‍👩‍👧 Real Neighbours</h5>
+            <p>Owner-occupied homes</p>
+          </div>
 
-  <div class="section-1">
-    <div class="container d-flex justify-content-center align-items-center flex-column">
-      <h1 class="text" data-aos="fade-up" data-aos-duration="1000">Studies show that communities with
-        short-term guests often feel less safe and secure</h1>
-      <p class="para">At The Woods – Barog, you’ll never worry about who’s next door</p>
-      <img src="assets/vector-1.png" alt="" data-aos="zoom-in" data-aos-duration="1000">
-      <button class="btn btn-theme mt-3" data-toggle="modal" data-target="#virtualTourModal">Take a Virtual
-        Tour</button>
-    </div>
-  </div>
-
-  <!-- self use only -->
-  <div class="section-2 text-center">
-    <div class="container">
-      <h2 class="text" data-aos="fade-up" data-aos-duration="1000">No Short-Term Rental = More Value for You</h2>
-
-      <div class="row justify-content-center py-3">
-        <!-- Left (lower) -->
-        <div class="col-md-4 d-flex flex-column justify-content-end mb-4">
-          <div class="mt-auto pt-5 center"> <!-- push down -->
-            <img src="assets/location.png" alt="Secure Community" width="30">
-            <h5 class="font-weight-bold mt-3">🔒 Secure Community</h5>
-            <p>No temporary guests</p>
+          <!-- Right (lower) -->
+          <div class="col-md-4 d-flex flex-column justify-content-end mb-4">
+            <div class="mt-auto pt-5 center">
+              <!-- push down -->
+              <img
+                src="assets/location.png"
+                alt="Secure Community"
+                width="30"
+              />
+              <h5 class="font-weight-bold mt-3">💰 Protected Investment</h5>
+              <p>Better upkeep and resale</p>
+            </div>
           </div>
         </div>
 
-        <!-- Center (top) -->
-        <div class="col-md-4 mb-4 center">
-          <img src="assets/location.png" alt="Secure Community" width="30">
-          <h5 class="font-weight-bold mt-3">👨‍👩‍👧 Real Neighbours</h5>
-          <p>Owner-occupied homes</p>
-        </div>
+        <button
+          class="btn btn-theme mt-3"
+          data-toggle="modal"
+          data-target="#virtualTourModal"
+        >
+          Take a Virtual Tour
+        </button>
+      </div>
+    </div>
 
-        <!-- Right (lower) -->
-        <div class="col-md-4 d-flex flex-column justify-content-end mb-4">
-          <div class="mt-auto pt-5 center"> <!-- push down -->
-            <img src="assets/location.png" alt="Secure Community" width="30">
-            <h5 class="font-weight-bold mt-3">💰 Protected Investment</h5>
-            <p>Better upkeep and resale</p>
+    <!-- thought full design  -->
+    <div class="section-4 py-5">
+      <div
+        class="container d-flex justify-content-center align-items-center flex-column"
+      >
+        <h1 class="text" data-aos="fade-up" data-aos-duration="1000">
+          Thoughtfully Designed
+        </h1>
+        <p class="para" style="font-size: 30px !important">
+          Every unit built for privacy, natural light & fresh air
+        </p>
+
+        <ul>
+          <li>
+            <i class="fa-solid fa-circle-check" style="color: green"></i> Only 3
+            Apartments Per Floor
+          </li>
+          <li>
+            <i class="fa-solid fa-circle-check" style="color: green"></i> Phase
+            1 Sold Out
+          </li>
+          <li>
+            <i class="fa-solid fa-circle-check" style="color: green"></i>
+            Financed by All Major Banks
+          </li>
+        </ul>
+
+        <button
+          class="btn btn-theme mt-3"
+          data-toggle="modal"
+          data-target="#virtualTourModal"
+        >
+          Take a Virtual Tour
+        </button>
+      </div>
+    </div>
+
+    <!-- How it works -->
+    <section class="section-5 py-5 text-center">
+      <div class="container">
+        <h2
+          class="self-margin text"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+        >
+          How it works
+        </h2>
+        <div class="row py-5">
+          <!-- Step 1 -->
+          <div class="col-md-4 mb-4">
+            <img
+              src="assets/icons8-schedule-96.png"
+              alt="Schedule Tour"
+              width="80"
+            />
+            <h5 class="mt-3 f-larger">1. Take a virtual tour</h5>
+          </div>
+
+          <!-- Step 2 -->
+          <div class="col-md-4 mb-4">
+            <img
+              src="assets/consulting-lineal-color-96.png"
+              alt="Discuss Requirements"
+              width="80"
+            />
+            <h5 class="mt-3 f-larger">2. Discuss your requirements</h5>
+          </div>
+
+          <!-- Step 3 -->
+          <div class="col-md-4 mb-4">
+            <img
+              src="assets/icons8-handshake-96.png"
+              alt="Visit and Decide"
+              width="80"
+            />
+            <h5 class="mt-1 f-larger">
+              3. Visit and decide<br />when you are ready
+            </h5>
           </div>
         </div>
+
+        <button
+          class="btn btn-theme mt-3"
+          data-toggle="modal"
+          data-target="#virtualTourModal"
+        >
+          Take a Virtual Tour
+        </button>
       </div>
+    </section>
 
-      <button class="btn btn-theme mt-3" data-toggle="modal" data-target="#virtualTourModal">Take a Virtual
-        Tour</button>
-    </div>
-  </div>
+    <!-- contact us  -->
+    <section class="section-5 py-5 text-center ">
+      <div
+        class="container d-flex justify-content-center align-items-center flex-column"
+      >
+        <h1 class="text" data-aos="fade-up" data-aos-duration="1000">
+          Contact Us
+        </h1>
+        <ul class="py-4 contact">
+          <li>
+            <i class="fa-solid fa-briefcase" style="color: green;"></i>
+            <span>Registered Office</span> : A 17 3rd Floor,Tagore Market, Kirti Nagar, New
+            Delhi - 110015
+          </li>
+          <li>
+           <i class="fa-solid fa-building" style="color: green;"></i>
+            <span>Site Office</span> : Barog Bypass RD, NH-22, Barog, Kalol, P.O. Kumarhatti,
+            Dist. Solan, H.P. 173211  (Approx 2.5 K.M. from Kumarhatti)
+          </li>
+          <li>
+            <i class="fa-solid fa-phone" style="color: green"></i>
+            <span>Phone Number</span> : 9211959035
+          </li>
+          <li>
+            <i class="fa-solid fa-envelope" style="color: green"></i>
+            <span>Email</span> : sales@thewoodsbarog.com
+          </li>
+        </ul>
 
-
-
-
-  <!-- second home -->
-  <!-- <div class="section-3 py-5">
-    <div class="container d-flex justify-content-center align-items-center flex-column">
-      <h1 class="text self-margin" data-aos="fade-up" data-aos-duration="1000">You Didn’t Buy a Second Home to Share It
-        With
-        Strangers</h1>
-      <p class="para mb-0">Here, you’ll find only like-minded owners</p>
-      <p class="para">Not tourists | Not Parties</p>
-      <img src="assets/vector-2.png" alt="" data-aos="zoom-in" data-aos-duration="1000">
-      <button class="btn btn-theme mt-3" data-toggle="modal" data-target="#virtualTourModal">Take a Virtual
-        Tour</button>
-    </div>
-  </div> -->
-
-  <!-- thought full design  -->
-  <div class="section-4 py-5">
-    <div class="container d-flex justify-content-center align-items-center flex-column">
-      <h1 class="text" data-aos="fade-up" data-aos-duration="1000">Thoughtfully Designed</h1>
-      <p class="para" style="font-size: 30px!important;">Every unit built for privacy, natural light & fresh air</p>
-
-      <ul>
-        <li><i class="fa-solid fa-circle-check" style="color: green;"></i> Only 3 Apartments Per Floor</li>
-        <li><i class="fa-solid fa-circle-check" style="color: green;"></i> Phase 1 Sold Out</li>
-        <li><i class="fa-solid fa-circle-check" style="color: green;"></i> Financed by All Major Banks</li>
-      </ul>
-
-      <button class="btn btn-theme mt-3" data-toggle="modal" data-target="#virtualTourModal">Take a Virtual
-        Tour</button>
-    </div>
-  </div>
-
-  <!-- How it works -->
-  <section class="section-5 py-5 text-center">
-    <div class="container">
-      <h2 class="self-margin  text" data-aos="fade-up" data-aos-duration="1000">How it works</h2>
-      <div class="row py-5">
-        <!-- Step 1 -->
-        <div class="col-md-4 mb-4">
-          <img src="assets/icons8-schedule-96.png" alt="Schedule Tour" width="80">
-          <h5 class="mt-3 f-larger">1. Take a virtual tour</h5>
-        </div>
-
-        <!-- Step 2 -->
-        <div class="col-md-4 mb-4">
-          <img src="assets/consulting-lineal-color-96.png" alt="Discuss Requirements" width="80">
-          <h5 class="mt-3 f-larger">2. Discuss your requirements</h5>
-        </div>
-
-        <!-- Step 3 -->
-        <div class="col-md-4 mb-4">
-          <img src="assets/icons8-handshake-96.png" alt="Visit and Decide" width="80">
-          <h5 class="mt-1 f-larger">3. Visit and decide<br>when you are ready</h5>
-        </div>
+        <button
+          class="btn btn-theme mt-5"
+          data-toggle="modal"
+          data-target="#virtualTourModal"
+        >
+          Take a Virtual Tour
+        </button>
       </div>
+    </section>
 
-      <button class="btn btn-theme mt-3" data-toggle="modal" data-target="#virtualTourModal">Take a Virtual
-        Tour</button>
-    </div>
-  </section>
-
-
-  <!-- footer -->
-  <div class="section-6 py-5">
-    <div class="container  " style=" padding: 25px;
-    border-radius: 18px;">
-      <h2>Escape the noise and own your space in the hills</h2>
-      <p class="fw-500">With more people choosing Himachal for their second home each year,
-        it's becoming harder to find peaceful, well-located homes.
-      </p>
-      <p class="fw-500">At The Woods – Barog, you get a thoughtfully designed home in a prime
-        location—right on the main highway, yet tucked away in nature.
-        A Peaceful Hill Home with Like-Minded Neighbours.</p>
-      <p class="fw-500">No temporary guests, no compromise on privacy!
-      <p>
-      <p class="fw-500">
-        <a id="readMoreBtn" class="btn btn-link p-0" data-toggle="collapse" href="#moreText" role="button"
-          aria-expanded="false" aria-controls="moreText">
-          Continue Reading...
-        </a>
-        <span class="collapse" id="moreText">
-          <!-- Paragraphs are the building blocks of papers. Many students define paragraphs in terms of length: a paragraph
+    <!-- footer -->
+    <div class="section-6 py-5">
+      <div class="container" style="padding: 25px; border-radius: 18px">
+        <h2>Escape the noise and own your space in the hills</h2>
+        <p class="fw-500">
+          With more people choosing Himachal for their second home each year,
+          it's becoming harder to find peaceful, well-located homes.
+        </p>
+        <p class="fw-500">
+          At The Woods – Barog, you get a thoughtfully designed home in a prime
+          location—right on the main highway, yet tucked away in nature. A
+          Peaceful Hill Home with Like-Minded Neighbours.
+        </p>
+        <p class="fw-500">No temporary guests, no compromise on privacy!</p>
+        <p></p>
+        <p class="fw-500">
+          <a
+            id="readMoreBtn"
+            class="btn btn-link p-0"
+            data-toggle="collapse"
+            href="#moreText"
+            role="button"
+            aria-expanded="false"
+            aria-controls="moreText"
+          >
+            Continue Reading...
+          </a>
+          <span class="collapse" id="moreText">
+            <!-- Paragraphs are the building blocks of papers. Many students define paragraphs in terms of length: a paragraph
           is a group of at least five sentences, a paragraph is half a page long, etc. In reality, though, the unity and
           coherence of ideas among sentences is what constitutes a paragraph. A paragraph is defined as “a group of
           sentences or a single sentence that forms a unit” (Lunsford and Connors 116). Length and appearance do not
@@ -185,74 +319,105 @@
           journalistic styles, a paragraph can be just one sentence long. Ultimately, a paragraph is a sentence or group
           of sentences that support one main idea. In this handout, we will refer to this as the “controlling idea,”
           because it controls what happens in the rest of the paragraph. -->
-
-
-        </span>
-      </p>
-    </div>
-  </div>
-
-  <!-- Modal -->
-  <div class="modal fade" id="virtualTourModal" tabindex="-1" role="dialog" aria-labelledby="virtualTourModalLabel"
-    aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered" role="document">
-      <div class="modal-content">
-
-        <!-- Modal Header -->
-        <div class="modal-header bg-success text-white">
-          <h5 class="modal-title" id="virtualTourModalLabel">Schedule a Virtual Tour</h5>
-          <button type="button" class="close text-white" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-
-        <!-- Modal Body with Form-4 -->
-        <div class="modal-body py-4">
-          <div class="contact-form px-3">
-            <form id="ajax-header-contact">
-              <div class="form-row">
-                <div class="form-group col-12">
-                  <label for="username" class="font-weight-bold">Full Name</label>
-                  <input type="text" name="name1" id="username" class="form-control" placeholder="Enter your name"
-                    required>
-                </div>
-                <div class="form-group col-12">
-                  <label for="City" class="font-weight-bold">You City</label>
-                  <input type="text" name="City" id="email" class="form-control" placeholder="Enter your City" required>
-                </div>
-                <div class="form-group col-12">
-                  <label for="phone" class="font-weight-bold">Phone Number</label>
-                  <input type="tel" name="phone" id="phone" class="form-control" placeholder="Enter your phone number"
-                    required>
-                </div>
-                <div class="form-group col-12 text-center mt-3">
-                  <button type="submit" class="btn btn-theme mt-3 px-4 py-2">Submit Now</button>
-                </div>
-              </div>
-            </form>
-          </div>
-        </div>
-
-
+          </span>
+        </p>
       </div>
     </div>
-  </div>
 
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="virtualTourModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="virtualTourModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <!-- Modal Header -->
+          <div class="modal-header bg-success text-white">
+            <h5 class="modal-title" id="virtualTourModalLabel">
+              Schedule a Virtual Tour
+            </h5>
+            <button
+              type="button"
+              class="close text-white"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
 
-  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+          <!-- Modal Body with Form-4 -->
+          <div class="modal-body py-4">
+            <div class="contact-form px-3">
+              <form id="ajax-header-contact">
+                <div class="form-row">
+                  <div class="form-group col-12">
+                    <label for="username" class="font-weight-bold"
+                      >Full Name</label
+                    >
+                    <input
+                      type="text"
+                      name="name1"
+                      id="username"
+                      class="form-control"
+                      placeholder="Enter your name"
+                      required
+                    />
+                  </div>
+                  <div class="form-group col-12">
+                    <label for="City" class="font-weight-bold">You City</label>
+                    <input
+                      type="text"
+                      name="City"
+                      id="email"
+                      class="form-control"
+                      placeholder="Enter your City"
+                      required
+                    />
+                  </div>
+                  <div class="form-group col-12">
+                    <label for="phone" class="font-weight-bold"
+                      >Phone Number</label
+                    >
+                    <input
+                      type="tel"
+                      name="phone"
+                      id="phone"
+                      class="form-control"
+                      placeholder="Enter your phone number"
+                      required
+                    />
+                  </div>
+                  <div class="form-group col-12 text-center mt-3">
+                    <button type="submit" class="btn btn-theme mt-3 px-4 py-2">
+                      Submit Now
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
-  <script src="form.js"></script>
-  <script>
-    AOS.init();
-  </script>
-  <script>
-    $('#readMoreBtn').on('click', function () {
-      // Hide the "Continue Reading..." link after clicking
-      $(this).hide();
-    });
-  </script>
-</body>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="form.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script>
+      $("#readMoreBtn").on("click", function () {
+        // Hide the "Continue Reading..." link after clicking
+        $(this).hide();
+      });
+    </script>
+  </body>
 </html>
