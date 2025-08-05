@@ -377,4 +377,6 @@ body {
 .footer a{
   text-decoration: none;
   color: white;
+      font-size: larger;
+    font-weight: 500;
 }

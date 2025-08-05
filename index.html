@@ -10,6 +10,9 @@
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <!-- Animate.css (required by WOW.js) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
 
   <!-- SweetAlert CDN -->
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
@@ -40,9 +43,11 @@
 
     <!-- Bottom Strip -->
     <div class="banner-bottom-strip d-flex justify-content-around text-dark font-weight-bold text-center py-3">
-      <div class="flex-fill py-1 text-light">Prime Location</div>
-      <div class="flex-fill py-1 text-light">No Short-Term Rental</div>
-      <div class="flex-fill py-1 text-light">Anyone Can Own</div>
+      <div class="flex-fill py-1 text-light wow fadeInUp" data-wow-delay="0.3s">Prime Location</div>
+      <div class="flex-fill py-1 text-light wow fadeInUp" data-wow-delay="0.6
+      
+       s">No Short-Term Rental</div>
+      <div class="flex-fill py-1 text-light wow fadeInUp" data-wow-delay="0.3s">Anyone Can Own</div>
     </div>
   </section>
 
@@ -332,10 +337,11 @@
   </section>
 
   <!-- section-8 (footer)-->
-  <section class="py-5 footer" >
+  <section class="py-5 footer">
     <div class="container">
       <div class="row justify-content-around text-center" style="row-gap: 10px!important;">
-        <div class="col-md-4"><a href="https://www.thewoodsbarog.com/types-of-apartment.html">Types Of Apartment</a></div>
+        <div class="col-md-4"><a href="https://www.thewoodsbarog.com/types-of-apartment.html">Types Of Apartment</a>
+        </div>
         <div class="col-md-4"><a href="https://www.thewoodsbarog.com/location.html">Location</a></div>
         <div class="col-md-4"><a href="https://www.thewoodsbarog.com/sitemap.html">Site Map</a></div>
         <div class="col-md-4"><a href="https://www.thewoodsbarog.com/image-gallery.html">Image Gallery</a></div>
@@ -393,20 +399,30 @@
     </div>
   </div>
 
-  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
 
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+  <!-- WOW.js -->
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+
   <script src="form.js"></script>
   <script>
     AOS.init();
   </script>
   <script>
-    $("#readMoreBtn").on("click", function () {
-      // Hide the "Continue Reading..." link after clicking
-      $(this).hide();
+    $(document).ready(function () {
+      // Initialize WOW.js
+      new WOW().init();
+
+      // Button click event
+      $("#readMoreBtn").on("click", function () {
+        $(this).hide();
+      });
     });
   </script>
+
 </body>
 
 </html>
