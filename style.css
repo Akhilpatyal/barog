@@ -1,10 +1,11 @@
 body {
   font-family: "Segoe UI", sans-serif;
-  background-color: #f9f9f9;
+  background-color: #ffffff;
 }
+
 .hero-section {
   background: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0)),
-    url("./assets/banner-1.png");
+    url("./assets/banner-1.jpg");
   background-size: cover;
   background-position: center;
   height: 100vh;
@@ -25,25 +26,28 @@ body {
 }
 
 .banner-bottom-strip {
-  background: rgba(255, 255, 255, 0.77);
+  /* background: rgba(255, 255, 255, 0.77); */
   position: absolute;
   bottom: 0;
   left: 0;
   right: 0;
   font-size: 1.2rem;
-  border-top: 1px solid #ddd;
+  /* border-top: 1px solid #ddd; */
 }
 
 .section-1 {
   padding: 100px 0px !important;
 }
+
 .icon-box {
   font-size: 2rem;
   color: #77c84b;
 }
+
 .lead {
   font-weight: 500;
 }
+
 .btn-theme {
   background-color: #77c84b;
   color: white;
@@ -51,10 +55,12 @@ body {
   padding: 13px 15px;
   font-size: 20px;
 }
+
 .btn-theme:hover {
   background-color: #77c84b;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
+
 .btn-theme-2 {
   background-color: #77c84b;
   color: white;
@@ -62,13 +68,16 @@ body {
   padding: 13px 15px;
   font-size: 16px;
 }
+
 .btn-theme-2:hover {
   background-color: #77c84b;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
+
 .section-2 {
   padding: 100px 0px !important;
 }
+
 .section-2 h2 {
   font-size: 1.8rem;
 }
@@ -89,29 +98,36 @@ body {
   font-size: 28px;
   list-style: none;
 }
+
 .center {
   display: flex;
   align-items: center;
   flex-direction: column;
 }
+
 .para {
   font-size: 24px;
   font-weight: 600;
   text-align: center;
 }
+
 .f-larger {
   font-size: x-large !important;
 }
+
 .fw-500 {
   font-weight: 500 !important;
 }
+
 .section-4 {
   margin-top: 60px !important;
   margin-bottom: 20px !important;
 }
+
 .section-5 {
   margin: 100px 0px !important;
 }
+
 .section-6 {
   margin-top: 80px !important;
   min-height: 80vh;
@@ -121,10 +137,12 @@ body {
   background-size: cover;
   image-rendering: pixelated;
 }
+
 .section-6 .container {
   background: rgb(255 255 255 / 70%);
   backdrop-filter: blur(2px);
 }
+
 .section-6 .container a {
   color: #2a5811 !important;
   font-weight: bold !important;
@@ -138,42 +156,50 @@ body {
   .section-1 {
     padding-top: 30px;
   }
+
   .section-4 {
     margin-top: 100px !important;
     margin-bottom: 80px !important;
   }
+
   .section-5 {
     margin-top: 40px !important;
     margin-bottom: 40px !important;
   }
+
   .section-5 .container {
     padding-top: 50px;
     padding-bottom: 20px;
   }
+
   .btn-theme-2 {
     padding: 12px 14px;
     font-size: 14px;
     margin-left: 2px;
   }
+
   .text {
     font-size: 20px !important;
     padding: 20px 20px;
     text-align: center;
     font-weight: 600;
   }
+
   .para {
     font-size: 18px;
     font-weight: 500;
     text-align: center;
   }
+
   .section-4 ul {
     padding: 23px 0px;
     font-size: 18px;
     list-style: none;
   }
+
   .hero-section {
     background: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0)),
-      url("./assets/mob-banner.png");
+      url("./assets/banner-1.jpg");
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -181,6 +207,7 @@ body {
     display: flex;
     flex-direction: column;
   }
+
   .section-6 {
     margin-top: 80px !important;
     min-height: 80vh;
@@ -190,53 +217,65 @@ body {
     background-size: cover;
     image-rendering: pixelated;
   }
+
   .self-margin {
     margin-bottom: 0px;
   }
+
   .banner-bottom-strip {
     flex-direction: column;
     font-size: 1rem;
   }
+
   .contact {
-  font-size: 22x;
-}
+    font-size: 22x;
+  }
 }
 
 @media (min-width: 480px) and (max-width: 768px) {
   .section-1 {
     padding-top: 30px;
   }
+
   .text {
     text-align: center;
     padding: 20px 20px;
     font-size: 24px !important;
   }
+
   .para {
     font-size: 18px;
   }
+
   .section-4 ul {
     font-size: 22px;
     padding: 23px 0px;
   }
+
   .section-4 {
     margin-top: 100px !important;
     margin-bottom: 80px !important;
   }
+
   .section-5 {
     margin-top: 40px !important;
     margin-bottom: 40px !important;
   }
+
   .section-5 .container {
     padding-top: 50px;
     padding-bottom: 20px;
   }
+
   .self-margin {
     margin-bottom: 0px;
   }
+
   .banner-bottom-strip {
     flex-direction: column;
     font-size: 1.2rem;
   }
+
   .hero-section {
     background: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0)),
       url("./assets/mob-banner.png");
@@ -247,6 +286,7 @@ body {
     display: flex;
     flex-direction: column;
   }
+
   .section-6 {
     margin-top: 80px !important;
     min-height: 80vh;
@@ -263,9 +303,66 @@ body {
   list-style-type: none;
   font-size: 25px;
 }
+
 .contact {
- padding-left: 14px!important;
+  padding-left: 14px !important;
 }
-.contact span{
+
+.contact span {
   font-weight: bolder;
+}
+
+
+/*  */
+.testimonial {
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 30px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.testimonial img {
+  object-fit: cover;
+  border-radius: 5px;
+  margin-right: 20px;
+}
+
+.testimonial-text {
+  font-size: 12px;
+  color: #333;
+  font-weight: 500;
+}
+
+.testimonial-author {
+  font-weight: 600;
+  margin-top: 10px;
+  color: #333;
+}
+
+.info h3 {
+  font-weight: 600;
+  font-family: ui-serif;
+  color: rgb(110 112 117);
+  letter-spacing: 1px;
+  font-size: 50px;
+}
+
+.info p {
+  font-weight: 600;
+  font-family: ui-serif;
+  color: rgb(110 112 117);
+  letter-spacing: 1px;
+  font-size: 30px;
+}
+@media (max-width:768px) {
+  .testimonial{
+  width: auto!important;
+  float: none!important;
+  flex-wrap: wrap;
+  }
+
 }
