@@ -28,7 +28,7 @@ body {
 .banner-bottom-strip {
   /* background: rgba(255, 255, 255, 0.77); */
   position: absolute;
-  bottom: 0;
+  bottom: 0px;
   left: 0;
   right: 0;
   font-size: 1.2rem;
@@ -137,7 +137,7 @@ body {
 }
 
 .section-6 .container {
-  background: rgb(255 255 255 / 70%);
+  background: rgb(255 255 255 / 85%);
   backdrop-filter: blur(2px);
   margin: 10px 5px;
 }
@@ -152,6 +152,15 @@ body {
 }
 
 @media screen and (max-width: 480px) {
+  .banner-bottom-strip {
+  /* background: rgba(255, 255, 255, 0.77); */
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  right: 0;
+  font-size: 1.2rem;
+  /* border-top: 1px solid #ddd; */
+}
   .section-1 {
     padding-top: 40px;
   }
