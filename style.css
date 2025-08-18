@@ -152,13 +152,17 @@ body {
 }
 
 @media screen and (max-width: 480px) {
+ .banner-bottom-strip h3 {
+  font-size: 22px;
+  margin: 0; /* helps avoid spacing issues */
+}
   .gap{
     gap: 50px!important;
   }
   .banner-bottom-strip {
   /* background: rgba(255, 255, 255, 0.77); */
   position: absolute;
-  bottom: 30px;
+  bottom: 10px;
   left: 0;
   right: 0;
   font-size: 1.2rem;
