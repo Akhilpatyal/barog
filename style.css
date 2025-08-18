@@ -152,6 +152,9 @@ body {
 }
 
 @media screen and (max-width: 480px) {
+  .gap{
+    gap: 50px!important;
+  }
   .banner-bottom-strip {
   /* background: rgba(255, 255, 255, 0.77); */
   position: absolute;
