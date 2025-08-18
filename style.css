@@ -127,7 +127,7 @@ body {
 .section-6 {
   margin-top: 100px !important;
   margin-bottom: 100px !important;
-  padding-bottom: 100px;
+  padding-bottom: 140px;
   min-height: 80vh;
   background: url(./assets/6.jpg);
   background-position: center;
@@ -154,6 +154,9 @@ body {
   .section-1 {
     padding-top: 40px;
   }
+  .section-2 {
+    padding: 0px 0px !important;
+}
 
   .section-2 .container .pt-5 {
     padding-top: 0px !important;
@@ -173,13 +176,13 @@ body {
   }
 
   .section-4 {
-    margin-top: 100px !important;
-    margin-bottom: 80px !important;
+       margin-top: 70px !important;
+    padding: 15px 0px !important;
   }
 
   .section-5 {
-    margin-top: 40px !important;
-    margin-bottom: 40px !important;
+   margin: 40px 0px !important;
+    /* padding: 25px 0px; */
   }
 
   .section-5 .container {
@@ -202,8 +205,8 @@ body {
   }
 
   .text {
-    font-size: 20px !important;
-    padding: 20px 20px;
+    font-size: 24px !important;
+    padding: 20px 15px;
     text-align: center;
     font-weight: 600;
   }
@@ -413,7 +416,8 @@ body {
 }
 
 .leftItem {
-  font-size: 20px;
+      font-size: 22px;
+    font-weight: 500;
 }
 
 /* Sections */
