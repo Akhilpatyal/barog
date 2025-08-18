@@ -27,15 +27,15 @@ async function handleFormSubmit(formId) {
     const phone = form.querySelector('[name="phone"]')
       ? form.querySelector('[name="phone"]').value.trim()
       : "";
-    const city = form.querySelector('[name="City"]')
-      ? form.querySelector('[name="City"]').value.trim()
-      : "";
+    // const city = form.querySelector('[name="City"]')
+    //   ? form.querySelector('[name="City"]').value.trim()
+    //   : "";
 
     // Validation for missing fields
     let missingFields = [];
     if (!name) missingFields.push("Name");
     if (!phone) missingFields.push("Phone");
-    if (!city) missingFields.push("City");
+    // if (!city) missingFields.push("City");
 
     if (missingFields.length > 0) {
       Swal.close(); // Close the waiting indicator
@@ -67,7 +67,7 @@ async function handleFormSubmit(formId) {
       project_name: "thewoodsbarog",
       name: name,
       mobile: phone,
-      city: city,
+      // city: city,
     };
 
     const apiUrl = "https://api.aajneetiadvertising.com/lead/save";
