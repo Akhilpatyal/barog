@@ -155,7 +155,7 @@ body {
   .banner-bottom-strip {
   /* background: rgba(255, 255, 255, 0.77); */
   position: absolute;
-  bottom: 20px;
+  bottom: 30px;
   left: 0;
   right: 0;
   font-size: 1.2rem;
