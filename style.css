@@ -434,6 +434,9 @@ body {
 .leftItem {
       font-size: 22px;
     font-weight: 500;
+        display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 /* Sections */
