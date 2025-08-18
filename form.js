@@ -91,7 +91,7 @@ async function handleFormSubmit(formId) {
       console.log("Response data:", data);
 
       // Redirect to thankyou.html after successful form submission
-      window.location.href = "/thankyou.html"; // Change the path if necessary
+      window.location.href = "/woodsBrochure.pdf"; // Change the path if necessary
     } catch (error) {
       console.error("Error:", error);
 
