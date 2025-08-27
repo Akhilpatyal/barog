@@ -106,7 +106,8 @@ body {
   font-size: 20px;
   list-style: none;
 }
-.section-4 ul li{
+
+.section-4 ul li {
   padding: 8px 0px;
   font-size: 25px;
   list-style: none;
@@ -327,7 +328,8 @@ body {
     margin-top: 100px !important;
     margin-bottom: 80px !important;
   }
-  .section-4 h1{
+
+  .section-4 h1 {
     font-size: 35px;
   }
 
@@ -370,7 +372,7 @@ body {
     background-size: cover;
     image-rendering: pixelated;
   }
-  
+
 }
 
 .contact {
@@ -434,13 +436,19 @@ body {
   font-size: 30px;
 }
 
+.videoSection h3 {
+  font-size: 40px;
+}
+
 @media (max-width:768px) {
-  .section-2 h5{
-    font-size: 28px!important;
+  .section-2 h5 {
+    font-size: 28px !important;
   }
-  .section-2 p{
-    font-size: 22px!important;
+
+  .section-2 p {
+    font-size: 22px !important;
   }
+
   .testimonial {
     width: auto !important;
     float: none !important;
@@ -464,6 +472,9 @@ body {
     margin-bottom: 0px !important;
   }
 
+  .videoSection h3 {
+    font-size: 26px !important;
+  }
 }
 
 .footer {
@@ -514,10 +525,12 @@ body {
   font-size: 46px;
   padding-bottom: 20px;
 }
+
 .hero-section p {
   font-size: 26px;
   font-weight: 500;
 }
-.bold{
+
+.bold {
   font-weight: 500;
 }
