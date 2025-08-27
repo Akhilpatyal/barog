@@ -103,7 +103,12 @@ body {
 
 .section-4 ul {
   padding: 25px 0px;
-  font-size: 28px;
+  font-size: 20px;
+  list-style: none;
+}
+.section-4 ul li{
+  padding: 8px 0px;
+  font-size: 25px;
   list-style: none;
 }
 
@@ -314,13 +319,16 @@ body {
   }
 
   .section-4 ul {
-    font-size: 22px;
+    font-size: 25px;
     padding: 23px 0px;
   }
 
   .section-4 {
     margin-top: 100px !important;
     margin-bottom: 80px !important;
+  }
+  .section-4 h1{
+    font-size: 35px;
   }
 
   .section-5 {
@@ -362,6 +370,7 @@ body {
     background-size: cover;
     image-rendering: pixelated;
   }
+  
 }
 
 .contact {
@@ -426,6 +435,12 @@ body {
 }
 
 @media (max-width:768px) {
+  .section-2 h5{
+    font-size: 28px!important;
+  }
+  .section-2 p{
+    font-size: 22px!important;
+  }
   .testimonial {
     width: auto !important;
     float: none !important;
