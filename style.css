@@ -4,14 +4,20 @@ body {
 }
 
 .hero-section {
-  background: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0)),
-    url("./assets/banner-1.jpg");
-  background-size: cover;
-  background-position: center;
-  height: 100vh;
   position: relative;
-  display: flex;
-  flex-direction: column;
+  background-color: #fff;
+}
+
+.hero-section h1 {
+  font-size: 2.2rem;
+  font-weight: 600;
+  color: #555;
+}
+
+.hero-section p {
+  font-size: 1.1rem;
+  font-weight: 400;
+  color: #555;
 }
 
 /* Center main content */
@@ -26,13 +32,12 @@ body {
 }
 
 .banner-bottom-strip {
-  /* background: rgba(255, 255, 255, 0.77); */
+  background: #f8f9fa;
   position: absolute;
-  bottom: 0px;
+  bottom: 0;
   left: 0;
   right: 0;
-  font-size: 1.2rem;
-  /* border-top: 1px solid #ddd; */
+  font-size: 1rem;
 }
 
 .section-1 {
@@ -54,8 +59,9 @@ body {
   background-color: #77c84b;
   color: white;
   border: none;
-  padding: 13px 22px;
-  font-size: 20px;
+  padding: 16px 47px;
+  font-size: 22px;
+  border-radius: 17px;
 }
 
 .btn-theme:hover {
@@ -90,8 +96,8 @@ body {
 
 .text {
   text-align: center;
-  padding: 0px 49px;
-  font-size: 40px !important;
+  padding: 0px 38px;
+  font-size: 42px !important;
   font-family: sans-serif;
 }
 
@@ -157,14 +163,15 @@ body {
     margin: 0;
     flex-wrap: wrap;
   }
+
   .gap {
     gap: 50px !important;
   }
 
   .banner-bottom-strip {
-    /* background: rgba(255, 255, 255, 0.77); */
+    background: rgba(255, 255, 255, 0.57);
     position: absolute;
-    bottom: 20px;
+    bottom: 5px;
     left: 0;
     right: 0;
     font-size: 1.2rem;
@@ -248,8 +255,8 @@ body {
   }
 
   .hero-section {
-    background: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0)),
-      url("./assets/banner-1.jpg");
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.35)),
+      url("./assets/banner-2.png");
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -336,8 +343,8 @@ body {
   }
 
   .hero-section {
-    background: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0)),
-      url("./assets/mob-banner.png");
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0)),
+      url("./assets/banner-2.png");
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -429,6 +436,19 @@ body {
     padding: 40px 0px !important;
   }
 
+  .btn-theme {
+    background-color: #77c84b;
+    color: white;
+    border: none;
+    padding: 16px 47px;
+    font-size: 16px;
+    border-radius: 17px;
+  }
+
+  .self-margin {
+    margin-bottom: 0px !important;
+  }
+
 }
 
 .footer {
@@ -470,7 +490,19 @@ body {
 }
 
 /* updates */
-.col-md-6{
- padding-left: 0px!important;
- padding-right: 0px!important;
+.col-md-6 {
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+}
+
+.hero-section h1 {
+  font-size: 46px;
+  padding-bottom: 20px;
+}
+.hero-section p {
+  font-size: 26px;
+  font-weight: 500;
+}
+.bold{
+  font-weight: 500;
 }
