@@ -9,7 +9,7 @@ body {
 }
 
 .hero-section h1 {
-  font-size: 2.2rem;
+  
   font-weight: 600;
   color: #555;
 }
@@ -177,7 +177,7 @@ body {
   .banner-bottom-strip {
     background: rgba(255, 255, 255, 0.57);
     position: absolute;
-    bottom: 5px;
+    bottom: 0px;
     left: 0;
     right: 0;
     font-size: 1.2rem;
@@ -446,7 +446,7 @@ body {
   }
 
   .section-2 p {
-    font-size: 22px !important;
+    font-size: 20px !important;
   }
 
   .testimonial {
@@ -475,6 +475,14 @@ body {
   .videoSection h3 {
     font-size: 26px !important;
   }
+  .hero-section h1 {
+  font-size: 42px;
+  padding-bottom: 20px;
+}
+.hero-section p {
+  font-size: 22px!important;
+}
+
 }
 
 .footer {
